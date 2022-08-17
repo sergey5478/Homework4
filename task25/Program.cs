@@ -4,16 +4,17 @@
 //2, 4 -> 16
 
 Console.Clear();
-Console.WriteLine("Введите первое число: ");
-int numOne = int.Parse(Console.ReadLine());
-Console.WriteLine("Введите второе число: ");
-int numTwo = int.Parse(Console.ReadLine());
-int getRate(int numberOne, int numberTwo)
+Console.Write("Введите первое число A: ");
+int numA = int.Parse(Console.ReadLine());
+Console.Write("Введите второе число B: ");
+int numB = int.Parse(Console.ReadLine());
+int getRate(int numberA, int numberB)
 {
-    int totalNum = numOne;
-    for(int i = 1; i < numTwo; i++) {
-        totalNum *= numOne;
+    int totalNum = numA;
+    for (int i = 1; i < numB; i++)
+    {
+        totalNum *= numA;
     }
     return totalNum;
 }
-Console.WriteLine($"Результат = {getRate(numOne, numTwo)}");
+Console.WriteLine($"Число A в степени B = {getRate(numA, numB)}");
