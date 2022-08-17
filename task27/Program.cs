@@ -9,7 +9,8 @@ int num = int.Parse(Console.ReadLine());
 int getSumOfNumbers(int number)
 {
     int totalNum = 0;
-    while(num > 0) {
+    while (num > 0)
+    {
         totalNum = totalNum + num % 10;
         num = num / 10;
     }
